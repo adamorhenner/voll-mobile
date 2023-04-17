@@ -2,6 +2,7 @@ import { Image, VStack, Text, Box, FormControl, Input,
 Button, Link } from 'native-base';
 import Logo from './assets/Logo.png';
 import { TouchableOpacity } from 'react-native';
+import { Titulo } from './componentes/Titulo';
  
 export default function Login() { 
   return (
@@ -9,15 +10,10 @@ export default function Login() {
     justifyContent="center" p={5}>
       <Image source={Logo} alt="Logo Voll"/>
 
-      <Text
-        fontSize="2xl"
-        fontWeight="bold"
-        color="gray.500"
-        textAlign="center"
-        mt={5}
-      >
+      <Titulo>
         Faça login em sua conta
-      </Text>
+      </Titulo>
+
       <Box>
         <FormControl mt={3}>
           <FormControl.Label>Email</FormControl.Label>
